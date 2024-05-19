@@ -1,8 +1,12 @@
+import InputFields from './InputFields';
+
 export default function App() {
   return (
-    <div>
+    <>
       <div>Hello world!</div>
-      <input />
-    </div>
+      <h1>React Meme Generator</h1>
+      <InputFields />
+      <div></div>
+    </>
   );
 }

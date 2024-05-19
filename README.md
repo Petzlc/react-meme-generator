@@ -4,17 +4,20 @@ Create a web app with React that allows for users to generate and download memes
 
 - [x] Initialize new react app.
 - [ ] Create two input-fields with changing states
-  - [x] Create an input field for the top text box
-    - [ ] This text box should have an associated label with the text "Top text."
-    - [ ] Create a state for the component
-    - [ ] Display the current state
-    - [ ] Connect the onChange event to update the state
+  - [ ] Create an input field for the top text box
+    - [ ] This text box should have an associated label with the text "Top text." (???)
+    - [x] Create a state for the component
+    - [x] Display the current state
+    - [x] Connect the onChange event to update the state
   - [ ] Create an input field for the bottom text box
-    - [ ] This text box should have an associated label with the text "Bottom text."
-    - [ ] Create a state for the component
-    - [ ] Display the current state
-    - [ ] Connect the onChange event to update the state
+    - [ ] This text box should have an associated label with the text "Bottom text." (???)
+    - [x] Create a state for the component
+    - [x] Display the current state
+    - [x] Connect the onChange event to update the state
   - [ ] Both text boxes should be empty when the page first loads
+- [ ] Figure out how to display the text in the meme-template (maybe with props.?)
+- [ ] Figure out a way to show the meme-templates from https://memegen.link/#templates in the app
+  - [ ] Figure out how to show a single template first
 - [ ] Create a third input-field for the user to generate a meme based on the user's input
   - [ ] Create an initial state for the page
     - [ ] When the page first loads , an image should be played by default as an initial state
