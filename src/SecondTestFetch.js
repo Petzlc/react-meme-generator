@@ -29,7 +29,8 @@ export default function SecondTestFetch() {
             key={`template-${String(template.id)}`}
             src={template.blank}
             alt={template.name}
-            width="200"
+            width="50"
+            height="50"
           />
         ))}
       </div>

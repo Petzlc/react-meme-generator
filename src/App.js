@@ -18,11 +18,11 @@ export default function App() {
       <br />
       <br />
       <br />
-      <TestFetch />
+      {/* <TestFetch /> */}
       <br />
       <br />
       <br />
-      <SecondTestFetch />
+      {/* <SecondTestFetch /> */}
     </>
   );
 }
