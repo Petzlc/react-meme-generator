@@ -30,6 +30,20 @@ export default function InputFields() {
           setTextBottom(event.currentTarget.value);
         }}
       />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <iframe
+        src="https://api.memegen.link/images/aag.png"
+        width="400"
+        height="400"
+        title="Alien"
+        sandbox="allow-popups"
+      />
     </>
   );
 }
