@@ -7,7 +7,7 @@ export default function InputFields() {
   return (
     <>
       {/* 2. Display current state */}
-      {/* <h1>{textTop}</h1> What do i need this for?*/}
+      <h1>{textTop}</h1> {/* Displays the text from the input field */}
       <input
         placeholder="top box" // delete placeholder before running the app
         value={textTop}
@@ -22,7 +22,7 @@ export default function InputFields() {
       <br />
       <br />
       <br />
-      {/* <h1>{textBottom}</h1> What do i need this for?*/}
+      <h1>{textBottom}</h1> {/* Displays the text from the input field */}
       <input
         placeholder="bottom box"
         value={textBottom}
@@ -44,7 +44,7 @@ export default function InputFields() {
           setTextBottom(event.currentTarget.value);
         }}
       />
-      {/* iframe does not work properly die to a weird display where img are displayed above each other with lots of space underneath, making the website huge. Couldn't fix that. */}
+      {/* iframe does not work properly due to a weird display where img are displayed above each other with lots of space underneath, making the website huge. Couldn't fix that. */}
       {/* <div style={{ width: '100%', height: '100vh', margin: 0, padding: 0 }}>
         <iframe
           title="aag"

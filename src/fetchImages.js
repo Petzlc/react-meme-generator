@@ -18,7 +18,7 @@ const imageUrls = [
 
 export default function FetchImages() {
   const [imgs, setImgs] = useState([]);
-
+  const [isButtonVisible, setIsButtonVisible] = useState(true); // Togggle Button to make an image appear
   const fetchImages = async () => {
     const imagePromises = imageUrls.map(async (url) => {
       const res = await fetch(url);
@@ -50,6 +50,31 @@ export default function FetchImages() {
           height="40"
         />
       ))}
+      {isButtonVisible && ( // Toggle button to make an image appear
+        <div>
+          {
+            imgs.map(
+              (
+                img,
+                index, // This makes the first button appear when clicking the toggle button
+              ) => (
+                <img
+                  key={`image-${String(img)}`}
+                  src={img}
+                  alt={`icon-${index}`}
+                  width="150"
+                  height="140"
+                />
+              ),
+            )[0]
+          }
+        </div>
+      )}
+      <button onClick={() => setIsButtonVisible(!isButtonVisible)}>
+        {' '}
+        {/* creates the toggle button and reverse the state to its opposite when clicked (so image appears or disappears)*/}
+        Toggle Button
+      </button>
     </div>
   );
 }

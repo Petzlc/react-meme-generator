@@ -1,4 +1,4 @@
-// import FetchImages from './FetchImages';
+import FetchImages from './FetchImages';
 import InputFields from './InputFields';
 import SecondTestFetch from './SecondTestFetch';
 
@@ -10,7 +10,8 @@ export default function App() {
       <div>Hello world!</div>
       <h1>React Meme Generator</h1>
       <InputFields />
-      {/* <FetchImages /> This solution requires to put in all the HTML src of the meems by hand which is a very impractical solution when you have more then 20 memes */}
+      <FetchImages />{' '}
+      {/* This solution requires to put in all the HTML src of the meems by hand which is a very impractical solution when you have more then 20 memes */}
       <br />
       <br />
       <br />
