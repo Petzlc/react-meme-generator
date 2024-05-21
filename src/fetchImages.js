@@ -12,6 +12,8 @@ const imageUrls = [
   'https://api.memegen.link/images/astronaut.png',
   'https://api.memegen.link/images/atis.png',
   'https://api.memegen.link/images/away.png',
+  'https://api.memegen.link/images/awesome.png',
+  'https://api.memegen.link/images/awesome-awkward.png',
 ];
 
 export default function FetchImages() {
