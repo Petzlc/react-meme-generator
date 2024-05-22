@@ -19,6 +19,8 @@ const imageUrls = [
 export default function FetchImages() {
   const [imgs, setImgs] = useState([]);
   const [isButtonVisible, setIsButtonVisible] = useState(true); // Togggle Button to make an image appear
+  const [count, setCount] = useState(0);
+  const [pick, setPick] = useState(0);
   const fetchImages = async () => {
     const imagePromises = imageUrls.map(async (url) => {
       const res = await fetch(url);
@@ -74,6 +76,54 @@ export default function FetchImages() {
         {' '}
         {/* creates the toggle button and reverse the state to its opposite when clicked (so image appears or disappears)*/}
         Toggle Button
+      </button>
+      <div>
+        {
+          imgs.map(
+            (
+              img,
+              index, // ((This makes the first button appear when clicking the toggle button))
+            ) => (
+              <img
+                key={`image-${String(img)}`}
+                src={img}
+                alt={`icon-${index}`}
+                width="150"
+                height="140"
+              />
+            ),
+          )[0]
+        }
+      </div>
+      ,
+      {/* Button for clicking through the images,connected with the setCount which doesn't work*/}
+      <button onClick={() => setCount(count + 1)}>Next Template</button>
+      {/* <button onClick={() => setCount(count - [1])}>Previous Template</button> */}
+      <br />
+      <br />
+      {/* Button for a random pick of template of the array */}
+      {pick && ( // Tried to create a button to click through the template-array randomly which doesn't work.
+        <div>
+          {imgs.map(
+            (img, index) =>
+              (
+                <img
+                  key={`image-${String(img)}`}
+                  src={img}
+                  alt={`icon-${index}`}
+                  width="150"
+                  height="140"
+                />
+              )[''],
+          )}
+        </div>
+      )}
+      <button
+        onClick={() =>
+          setPick(pick + Math.floor(Math.random() * imageUrls.length))
+        }
+      >
+        Random Pick
       </button>
     </div>
   );
